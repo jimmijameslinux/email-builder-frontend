@@ -1,0 +1,36 @@
+/* Default dropzone styling */
+.dropzone {
+    /* transition: all 0.3s ease; */
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Highlight when dragging files over */
+.dropzone-active {
+    background-color: #e0f7e9;
+    /* Light green background */
+    border-color: #28a745;
+    /* Bootstrap success green */
+}
+
+/* Placeholder text styling */
+.dropzone p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.dropzone-active p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+.dropzone:hover {
+    border: none;
+    outline: 3px solid #28a745;
+    background-color: #e0f7e9;
+}

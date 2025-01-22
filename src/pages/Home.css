@@ -1,0 +1,14 @@
+/* Default container style */
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    /* Light background for contrast */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Overlay effect when dragging */
+.home-container.dragging {
+    background-color: #e0f7e9;
+    /* Light green overlay */
+}
