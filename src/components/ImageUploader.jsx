@@ -14,7 +14,7 @@ const ImageUploader = ({ onUpload }) => {
         formData.append('image', file);
 
         try {
-            const response = await fetch('http://localhost:5000/api/uploadImage', {
+            const response = await fetch('https://email-builder-backend-7n9i.onrender.com/api/uploadImage', {
                 method: 'POST',
                 body: formData,
             });

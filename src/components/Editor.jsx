@@ -11,7 +11,7 @@ const Editor = ({ onSave,imageUrl }) => {
     const templateData = { title, content, footer, imageUrl };
     try {
       // Send template data to the backend
-      const response = await axios.post('http://localhost:5000/api/uploadEmailConfig', templateData);
+      const response = await axios.post('https://email-builder-backend-7n9i.onrender.com/api/uploadEmailConfig', templateData);
       console.log('Template saved:', response.data.message);
 
       // Pass the updated data to the parent component

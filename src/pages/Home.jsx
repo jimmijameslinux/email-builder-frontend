@@ -17,7 +17,7 @@ const Home = () => {
     });
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/getEmailLayout')
+        axios.get('https://email-builder-backend-7n9i.onrender.com/api/getEmailLayout')
             .then((response) => setLayout(response.data))
             .catch((error) => console.error('Error fetching layout:', error));
     }, []);
