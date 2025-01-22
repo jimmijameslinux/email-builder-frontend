@@ -38,6 +38,7 @@ const Editor = ({ onSave, imageUrl }) => {
                             className="form-control"
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
+                            required
                         />
                     </div>
                     <div className="mb-3">
@@ -47,6 +48,7 @@ const Editor = ({ onSave, imageUrl }) => {
                             className="form-control"
                             rows="5"
                             value={content}
+                            required
                             onChange={(e) => setContent(e.target.value)}
                         ></textarea>
                     </div>
@@ -58,6 +60,7 @@ const Editor = ({ onSave, imageUrl }) => {
                             className="form-control"
                             value={footer}
                             onChange={(e) => setFooter(e.target.value)}
+                            required
                         />
                     </div>
                     <button className="btn btn-success" onClick={saveHandler}>

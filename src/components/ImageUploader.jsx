@@ -36,7 +36,7 @@ const ImageUploader = ({ onUpload }) => {
                 className={`dropzone border p-4 text-center ${isDragActive ? 'dropzone-active' : 'bg-light'
                     }`}
             >
-                <input {...getInputProps()} />
+                <input {...getInputProps()} required />
                 {isDragActive ? (
                     <p className="text-success">Drop the files here...</p>
                 ) : (
