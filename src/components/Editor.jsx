@@ -16,6 +16,14 @@ const Editor = ({ onSave, imageUrl }) => {
 
             // Pass the updated data to the parent component
             onSave(templateData);
+
+            // Save the rendered HTML in the browser
+            const renderedHtml = response.data.renderedHtml;
+            const blob = new Blob([renderedHtml], { type: 'text/html' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'renderedOutput.html';
+            link.click();
             // ui alert
             alert('Template saved in the database and output.html in the backend');
         } catch (error) {
